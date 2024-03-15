@@ -10,9 +10,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Modyfikacja 1
-            //Modyfikacja 2
-            //Modyfikacja 3
+            int[] array = { 1, 2, 3, 4 };
+            Console.WriteLine(average(array));
+            Console.WriteLine(max(array));
         }
         static double average(int[] array)
         {
@@ -23,6 +23,18 @@ namespace ConsoleApp1
             }
             sum = sum / array.Length;
             return sum;
+        }
+        static int max(int[] array)
+        {
+            int max = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > max)
+                {
+                    max = array[i];
+                }
+            }
+            return max;
         }
     }
 }
