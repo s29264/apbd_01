@@ -16,13 +16,13 @@ namespace ConsoleApp1
         }
         static double average(int[] array)
         {
-            double sum = 0;
+            double total = 0;
             for (int i = 0; i < array.Length; i++)
             {
-                sum += array[i];
+                total = total + array[i];
             }
-            sum = sum / array.Length;
-            return sum;
+            total = total / array.Length;
+            return total;
         }
         static int max(int[] array)
         {
